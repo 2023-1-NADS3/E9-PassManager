@@ -1,6 +1,6 @@
 Decidimos em conjunto que o Manifesto que representa a visão singular do projeto seria a declaração abaixo:
 
-"A segurança das suas senhas num único lugar com praticidade e mobilidade".
+<br>"A segurança das suas senhas num único lugar com praticidade e mobilidade".</br>
 
 Nossa missão:
 

@@ -1,0 +1,1 @@
+Desenvolvi o Mapa de Jornada do nosso aplicativo, que nos guiará a entender a experiência do usuário em cada etapa da interação com nosso app, ajudando dessa forma a  identificar oportunidades de melhoria e criar empatia com os usuários.

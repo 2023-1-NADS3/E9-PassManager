@@ -1,0 +1,1 @@
+Entregamos a primeira demanda do Professor Vitor que era o repositorio Frontend do projeto, repositorio Backend e o design no figma

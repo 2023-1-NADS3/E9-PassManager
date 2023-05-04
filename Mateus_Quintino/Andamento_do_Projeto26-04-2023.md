@@ -1,0 +1,1 @@
+Terminei de codar todas as telas do Frontend do projeto agora só falta integrar com a API e fazer alguns ajustes 

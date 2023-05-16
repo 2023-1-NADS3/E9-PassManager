@@ -1,0 +1,1 @@
+Após levantarmos as informações necessárias para a criar do mapa de jornada do nosso aplicativo, desenvolvemos o Mapa de Jornada que nos guiará a entender a experiência do usuário em cada etapa da interação com nosso aplicativo, ajudando dessa forma a identificar oportunidades de melhoria e criar empatia com os usuários através das suas dores e necessidades.

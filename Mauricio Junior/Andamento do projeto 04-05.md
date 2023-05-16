@@ -1,0 +1,1 @@
+Realizamos a elaboração do Plano de Gerenciamento de Qualidade de Software - Fluxograma do projeto. De acordo com as orientações do professor Aimar da disciplina Testes e Qualidade de Software.

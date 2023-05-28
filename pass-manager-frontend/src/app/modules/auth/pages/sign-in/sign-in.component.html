@@ -1,0 +1,75 @@
+<div class="container">
+  <header>
+    <img src="/assets/imgs/logo.png" alt="Logo" />
+    <h2>Pass Manager</h2>
+  </header>
+
+  <main>
+    <h2>Bem vindo de volta!</h2>
+    <p class="insertData">Por favor Insira seus dados.</p>
+
+    <form [formGroup]="form">
+      <div class="inputContainer">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          class="singInInput"
+          type="text"
+          placeholder="Insira seu email"
+          formControlName="email"
+        />
+      </div>
+      <div
+        class="erroCase"
+        *ngIf="
+          form.controls['email'].invalid &&
+          (form.controls['email'].dirty || form.controls['email'].touched)
+        "
+      >
+        <span
+          >O campo email é obrigatório e necessário <br />
+          que seja um email existente</span
+        >
+      </div>
+
+      <div class="passwordContainer">
+        <label for="password">Senha:</label>
+        <input
+          id="password"
+          [type]="hide ? 'password' : 'text'"
+          class="singInInput"
+          placeholder="Insira sua senha"
+          formControlName="password"
+        />
+        <button
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <img
+            src="{{
+              hide ? '/assets/icons/eye-slash.svg' : '/assets/icons/eye.svg'
+            }}"
+            alt=""
+          />
+        </button>
+      </div>
+      <div
+        class="erroCase"
+        *ngIf="
+          form.controls['password'].invalid &&
+          (form.controls['password'].dirty || form.controls['password'].touched)
+        "
+      >
+        <span>O campo senha é obrigatório</span>
+      </div>
+
+      <div class="regiterContainer">
+        <button type="submit" (click)="authenticate()">Entre</button>
+        <p class="register">
+          Ainda não tem uma conta? <a routerLink="/auth/sign-up">Cadastre-se</a>
+        </p>
+      </div>
+    </form>
+  </main>
+</div>

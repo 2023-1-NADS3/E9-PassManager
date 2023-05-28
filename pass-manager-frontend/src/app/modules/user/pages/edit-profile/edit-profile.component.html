@@ -1,0 +1,60 @@
+<div class="container">
+  <header>
+    <img
+      class="back"
+      routerLink="/credential/list"
+      src="/assets/icons/back.svg"
+      alt="voltar"
+    />
+
+    <img src="/assets/imgs/logo.png"  routerLink="/credential/list"  alt="Pass Manger Logo" />
+  </header>
+
+  <main>
+    <h1>Editar meu perfil</h1>
+
+    <form *ngIf="user" [formGroup]="form">
+      <div class="inputContainer">
+        <label>Email:</label>
+        <input
+          placeholder="{{ user.email }}"
+          type="text"
+          formControlName="email"
+        />
+      </div>
+      <div
+        class="erroCase"
+        *ngIf="
+          form.controls['email'].invalid &&
+          (form.controls['email'].dirty || form.controls['email'].touched)
+        "
+      >
+        <span>O campo email é obrigatório</span>
+      </div>
+
+      <div class="inputContainer">
+        <label>Usuário:</label>
+        <input
+          placeholder="{{ user.username }}"
+          type="text"
+          formControlName="username"
+        />
+      </div>
+      <div
+        class="erroCase"
+        *ngIf="
+          form.controls['username'].invalid &&
+          (form.controls['username'].dirty || form.controls['username'].touched)
+        "
+      >
+        <span>O campo usuário é obrigatório</span>
+      </div>
+
+      <div class="buttonContainer">
+        <button (click)="deleteUser(user)" class="delete">Excluir conta</button>
+
+        <button (click)="updateUser()" class="save">Salvar</button>
+      </div>
+    </form>
+  </main>
+</div>

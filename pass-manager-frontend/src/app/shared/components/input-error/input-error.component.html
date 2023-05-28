@@ -1,0 +1,32 @@
+<span *ngIf="control?.errors?.minlength">
+    * Você digitou {{control.errors?.minlength?.actualLength}} caracteres, digite {{control.errors?.minlength?.requiredLength}} caracteres
+</span>
+
+<span *ngIf="control?.errors?.maxlength">
+    * Você digitou {{control.errors?.maxlength?.actualLength}} caracteres, digite {{control.errors?.maxlength?.requiredLength}} caracteres
+</span>
+
+<span *ngIf="control?.errors?.max">
+    * Você digitou {{control.errors?.max?.actual}}, o valor máximo é {{control.errors?.max?.max}}.
+</span>
+
+<span *ngIf="control?.errors?.required">
+    * Este campo é obrigatório
+</span>
+
+<span *ngIf="control?.errors?.email">
+    * E-mail inválido
+</span>
+
+<span *ngIf="control?.errors?.timeError">
+    * Horário inválido
+</span>
+
+<span *ngIf="control?.errors?.dateError">
+    * Data inválida
+</span>
+
+<span *ngIf="control?.errors?.CPFCNPJError">
+    * CPF/CNPJ inválido
+</span>
+

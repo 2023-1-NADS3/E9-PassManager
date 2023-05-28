@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  header {
+    width: 100vw;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+    img {
+      padding-right: 10px;
+    }
+  }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      padding-bottom: 14px;
+    }
+
+    .insertData {
+      font-size: 1rem;
+      color: #999595;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 76px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .inputContainer {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      label {
+        color: #676464;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .singInInput {
+        width: 330px;
+        height: 42px;
+        margin-bottom: 20px;
+        color: rgba(80, 77, 77, 0.6);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #999595;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .passwordContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        button {
+          height: 18px;
+          width: 18px;
+          border: none;
+          color: #000;
+          position: absolute;
+          right: 20px;
+          bottom: 30px;
+          cursor: pointer;
+
+          img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+          }
+        }
+      }
+
+      .regiterContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        button {
+          width: 330px;
+          height: 42px;
+          background-color: #075985;
+          color: #ffff;
+          border: none;
+          border-style: none;
+          cursor: pointer;
+          border-radius: 4px;
+          margin-top: 40px;
+        }
+
+        .register {
+          margin-top: 18px;
+          font-size: 0.875rem;
+
+          a {
+            color: #075985;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+
+.erroCase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  span {
+    font-size: 0.750em;
+    display: inline-block;
+    text-align: center;
+  }
+
+}

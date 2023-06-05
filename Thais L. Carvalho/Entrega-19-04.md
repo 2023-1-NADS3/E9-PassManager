@@ -1,0 +1,1 @@
+Desenvolvi a base para os USer Stories do projeto com o layout e dados adicionais.
